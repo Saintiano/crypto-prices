@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Crypcy</string>
+
+    <string name="action_settings">Update</string>
+
+    <string name="currency">Currency</string>
+
+    <string name="eth_symbol">1 ETH</string>
+
+    <string name="btc_symbol">1 BTC</string>
+
+
+    <string name="convert">Convert</string>
+
+
+    <string name="input_amount">Input Amount</string>
+
+
+    <string name="not_number">This is not a number</string>
+
+    <!-- Text to display in the list when there are no currency prices[CHAR LIMIT=NONE] -->
+    <string name="no_currency">No currency price found.</string>
+
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">No internet connection.</string>
+
+</resources>

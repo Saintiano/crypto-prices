@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF1ECEE9"
+    tools:context="com.example.android.crypcy.CurrencyConverter">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:id="@+id/base_to_eth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:text="ETHERIUM"
+            android:textColor="#FFE91E63"
+            android:textSize="30sp"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/base_to_btc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="BITCOIN"
+            android:textColor="#FFF7931A"
+            android:textSize="30sp"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/input_amount"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#616161"
+        android:textSize="36sp"
+        android:layout_margin="15dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:id="@+id/base_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textAllCaps="true"
+            android:textColor="#131111"
+            android:textSize="36sp" />
+
+
+        <EditText
+            android:id="@+id/retrieve_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@id/base_symbol"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="@string/convert"
+        android:onClick="convertAmount"
+        android:textSize="35sp"
+        android:background="#FFF7671A"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>
